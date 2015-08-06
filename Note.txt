@@ -1,1 +1,15 @@
-https://github.com/imnotanderson/Note.git
+算法
+http://blog.csdn.net/orbit/article/details/7082678
+http://blog.csdn.net/orbit/article/details/7101869
+逼近
+http://blog.csdn.net/orbit/article/details/12793343
+画直线
+http://blog.sina.com.cn/s/blog_4a2183a60101dhr4.html
+鱼群
+http://blog.sina.com.cn/s/blog_4a2183a60101avwt.html
+AABB相交
+http://blog.sina.com.cn/s/blog_4a2183a601014vl3.html
+计算几何
+http://blog.sina.com.cn/s/blog_4a2183a601014tq6.html
+三次平滑算法
+http://blog.sina.com.cn/s/blog_4a2183a60100ymed.html
