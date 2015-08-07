@@ -13,3 +13,19 @@ http://blog.sina.com.cn/s/blog_4a2183a601014vl3.html
 http://blog.sina.com.cn/s/blog_4a2183a601014tq6.html
 三次平滑算法
 http://blog.sina.com.cn/s/blog_4a2183a60100ymed.html
+CatmullRom插值算法
+http://blog.csdn.net/ym19860303/article/details/21401553
+求贝赛尔 曲线的长度
+http://blog.csdn.net/ym19860303/article/details/8277152
+Dijkstra 算法原理
+http://blog.csdn.net/ym19860303/article/details/8006217
+四元数
+http://blog.csdn.net/ym19860303/article/details/29572217
+ Catmull–Rom样条插值
+http://www.tuicool.com/articles/MJNNNvi
+Cubic Hermite spline
+https://en.wikipedia.org/wiki/Cubic_Hermite_spline#Catmull.E2.80.93Rom_spline
+Cubic Hermite spline Github
+https://github.com/nuhash/UnityCubicSpline/blob/master/CubicSpline.cs
+=====================
+http://www.element3ds.com/thread-40541-1-1.html
