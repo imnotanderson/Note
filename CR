@@ -1,0 +1,29 @@
+
+    public Vector3 GetPoint(float perc, Vector3[] wps)
+    {
+        if (wps.Length < 4)
+        {
+            return Vector3.zero;
+        }
+        Vector3[] controlPoints = new Vector3[]{
+        wps[0]+(wps[0]-wps[1]).normalized,
+        wps[wps.Length-1]+(wps[wps.Length-1]-wps[wps.Length-2]).normalized
+        };
+        int numSections = wps.Length - 1; // Considering also control points
+        int tSec = (int)Mathf.Floor(perc * numSections);
+        int currPt = numSections - 1;
+        if (currPt > tSec) currPt = tSec;
+        float u = perc * numSections - currPt;
+
+        Vector3 a = currPt == 0 ? controlPoints[0] : wps[currPt - 1];
+        Vector3 b = wps[currPt];
+        Vector3 c = wps[currPt + 1];
+        Vector3 d = currPt + 2 > wps.Length - 1 ? controlPoints[1] : wps[currPt + 2];
+
+        return .5f * (
+            (-a + 3f * b - 3f * c + d) * (u * u * u)
+            + (2f * a - 5f * b + 4f * c - d) * (u * u)
+            + (-a + c) * u
+            + 2f * b
+        );
+    }
