@@ -1,15 +1,30 @@
-
-    public Vector3 GetPoint(float perc, Vector3[] wps)
+ public Vector3 GetPoint(float perc, Vector3[] wps,bool isClosed)
     {
         if (wps.Length < 4)
         {
             return Vector3.zero;
         }
-        Vector3[] controlPoints = new Vector3[]{
-        wps[0]+(wps[0]-wps[1]).normalized,
-        wps[wps.Length-1]+(wps[wps.Length-1]-wps[wps.Length-2]).normalized
-        };
-        int numSections = wps.Length - 1; // Considering also control points
+        Vector3[] controlPoints  = null;
+        if (isClosed)
+        {
+            controlPoints = new Vector3[]{
+                wps[wps.Length-1],
+                wps[0]
+            };
+            List<Vector3> tmList = new List<Vector3>();
+            tmList.AddRange(wps);
+            tmList.Insert(0, controlPoints[1]);
+            tmList.Add(wps[0]);
+            wps = tmList.ToArray();
+        }
+        else
+        {
+            controlPoints = new Vector3[]{
+            wps[0]+(wps[0]-wps[1]).normalized,
+            wps[wps.Length-1]+(wps[wps.Length-1]-wps[wps.Length-2]).normalized
+            };
+        }
+        int numSections = wps.Length - 1;
         int tSec = (int)Mathf.Floor(perc * numSections);
         int currPt = numSections - 1;
         if (currPt > tSec) currPt = tSec;
