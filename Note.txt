@@ -1,3 +1,6 @@
+q群关系
+https://qun.insight-labs.org/
+
 输入法禁止全屏
 	
 	View.setImeOptions(EditorInfo.IME_FLAG_NO_FULLSCREEN|EditorInfo.IME_ACTION_DONE);
