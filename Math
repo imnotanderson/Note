@@ -1,0 +1,8 @@
+  [parabola]
+            t = 0;
+            Vector3 pos = iconTrans.localPosition;
+            float t1 = Mathf.Sqrt(2 * (pos.y - flyToPos.y + height) / a);
+            float t2 = Mathf.Sqrt(2 * (height) / a);
+            ySpeed = a * t2;
+            xSpeed = (flyToPos.x - pos.x) / (t1 + t2);
+            tMax = t1 + t2;
