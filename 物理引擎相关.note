@@ -1,2 +1,16 @@
 为 JavaScript 游戏构建一个简单的 2D 物理引擎
 https://www.ibm.com/developerworks/cn/web/wa-build2dphysicsengine/
+
+ycs 2015/12/2 17:44:46
+https://msdn.microsoft.com/en-us/library/dd254918(v=xnagamestudio.31).aspx
+纠正位置的可以看这个
+8点碰撞的有篇blog来着， 后来没弄这个被我整理掉了
+17:46:08
+ycs 2015/12/2 17:46:08
+http://games.greggman.com/game/programming_m_c__kids/
+在这
+ycs 2015/12/2 17:46:24
+还有这篇， 类似
+http://qfox.nl/weblog/232
+ycs 2015/12/2 17:46:39
+基本就这两种做法， 不用物理引擎的话
