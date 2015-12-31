@@ -1,4 +1,8 @@
 
+
+
+[不明觉厉](http://acko.net/blog/how-to-fold-a-julia-fractal/)
+
 [RBTree](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
 
 [RBTree](http://blog.csdn.net/v_july_v/article/details/6105630)
