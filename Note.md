@@ -1,5 +1,5 @@
 
-
+[Scan<-这个人好厉害](http://www.cnblogs.com/cbscan/)
 
 [不明觉厉](http://acko.net/blog/how-to-fold-a-julia-fractal/)
 
