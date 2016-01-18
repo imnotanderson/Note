@@ -1,4 +1,6 @@
 
+[Effective Go](http://www.hellogcc.org/effective_go.html)
+
 [Skywind](http://www.skywind.me/)
 
 [Scan<-这个人好厉害](http://www.cnblogs.com/cbscan/)
