@@ -1,4 +1,46 @@
 
+
+using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+
+[ExecuteInEditMode]
+public class MyButton : MonoBehaviour
+{
+
+    public RectTransform rect;
+    public System.Action onEnter, onExit;
+    bool isEnter = false;
+    void Awake()
+    {
+        rect = GetComponent<RectTransform>();
+    }
+
+    void Update()
+    {
+        var pos = Input.mousePosition;
+        bool enter = RectTransformUtility.RectangleContainsScreenPoint(rect, pos, null);
+        if (enter && !isEnter)
+        {
+            isEnter = true;
+            if (onEnter != null)
+                onEnter();
+        }
+        if (!enter && isEnter)
+        {
+            Debug.Log("exit");
+            if (onExit != null)
+            {
+                onExit();
+            }
+        }
+    }
+
+}
+
+
+
 [http://blog.tomyail.com/](http://blog.tomyail.com/)
 
 [2015 年度新增开源软件排名 TOP 100](http://www.oschina.net/news/69808/2015-annual-ranking-top-100-new-open-source-software)
