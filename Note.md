@@ -1,4 +1,6 @@
 
+[http://blog.tomyail.com/](http://blog.tomyail.com/)
+
 [2015 年度新增开源软件排名 TOP 100](http://www.oschina.net/news/69808/2015-annual-ranking-top-100-new-open-source-software)
 
 [Effective Go](http://www.hellogcc.org/effective_go.html)
