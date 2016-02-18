@@ -1,45 +1,5 @@
 
-
-using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
-
-
-[ExecuteInEditMode]
-public class MyButton : MonoBehaviour
-{
-
-    public RectTransform rect;
-    public System.Action onEnter, onExit;
-    bool isEnter = false;
-    void Awake()
-    {
-        rect = GetComponent<RectTransform>();
-    }
-
-    void Update()
-    {
-        var pos = Input.mousePosition;
-        bool enter = RectTransformUtility.RectangleContainsScreenPoint(rect, pos, null);
-        if (enter && !isEnter)
-        {
-            isEnter = true;
-            if (onEnter != null)
-                onEnter();
-        }
-        if (!enter && isEnter)
-        {
-            Debug.Log("exit");
-            if (onExit != null)
-            {
-                onExit();
-            }
-        }
-    }
-
-}
-
-
+[浅析Go语言的Interface机制](http://www.cnblogs.com/concurrency/p/4311958.html)
 
 [http://blog.tomyail.com/](http://blog.tomyail.com/)
 
