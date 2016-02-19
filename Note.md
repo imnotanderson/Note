@@ -1,4 +1,6 @@
 
+[hassanselim](http://hassanselim.me/Post.aspx?pID=73)
+
 [Name5566](http://name5566.com/)
 
 [浅析Go语言的Interface机制](http://www.cnblogs.com/concurrency/p/4311958.html)
