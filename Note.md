@@ -1,4 +1,17 @@
 
+//判定编辑器关闭
+IsPlaying = true;
+#if UNITY_EDITOR
+        EditorApplication.playmodeStateChanged += () =>
+        {
+            if (!EditorApplication.isPlayingOrWillChangePlaymode &&
+                  EditorApplication.isPlaying)
+            {
+                IsPlaying = false;
+            }
+        };
+#endif
+
 [hassanselim](http://hassanselim.me/Post.aspx?pID=73)
 
 [Name5566](http://name5566.com/)
