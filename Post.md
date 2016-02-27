@@ -1,4 +1,7 @@
-#跨域
+- 随机表问题
+
+
+- 跨域
 
 javascript:(function(){var s = document.createElement('script'); s.type = 'text/javascript'; s.src = 'http://127.0.0.1:4000/js'; document.body.insertBefore(s, document.body.firstChild);})()
 
