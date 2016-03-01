@@ -1,3 +1,10 @@
+
+-Unity 
+gametObject.SetActive(false);
+gameObject.SetACtive(true);
+动画,协程都会中断
+
+
 - 随机表问题
 
 
